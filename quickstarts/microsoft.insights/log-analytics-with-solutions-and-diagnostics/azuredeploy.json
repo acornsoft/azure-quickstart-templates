@@ -15,7 +15,7 @@
     },
     "logAnalyticsWorkspaceName": {
       "type": "string",
-      "defaultValue": "[format('la-{0}', uniqueString(resourceGroup().id))]"
+      "defaultValue": "[format('log-{0}', uniqueString(resourceGroup().id))]"
     }
   },
   "variables": {
