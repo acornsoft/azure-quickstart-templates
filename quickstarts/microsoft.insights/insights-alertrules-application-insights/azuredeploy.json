@@ -50,8 +50,13 @@
       "name": "[parameters('workspaceName')]",
       "location": "[parameters('location')]",
       "properties": {
+        "features": {
+          "enableLogAccessUsingOnlyResourcePermissions": true
+        },        
+        "publicNetworkAccessForIngestion": "Enabled",
+        "publicNetworkAccessForQuery": "Enabled"
         "sku": {
-          "name": "Free"
+          "name": "pergb2018"
         }
       }
     },
