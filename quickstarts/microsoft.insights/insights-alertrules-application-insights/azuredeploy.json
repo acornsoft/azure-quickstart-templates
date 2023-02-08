@@ -54,7 +54,7 @@
           "enableLogAccessUsingOnlyResourcePermissions": true
         },        
         "publicNetworkAccessForIngestion": "Enabled",
-        "publicNetworkAccessForQuery": "Enabled"
+        "publicNetworkAccessForQuery": "Enabled",
         "sku": {
           "name": "pergb2018"
         }
