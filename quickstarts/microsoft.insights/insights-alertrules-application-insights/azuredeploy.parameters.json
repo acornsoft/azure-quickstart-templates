@@ -7,6 +7,9 @@
 		},
 		"applicationInsightsName":{
 			"value": "GEN-UNIQUE"
-		}	
+		},
+		"alertRuleName":{
+			"value": "GEN-UNIQUE"
+		},
 	}
 }
