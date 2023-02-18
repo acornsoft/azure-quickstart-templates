@@ -38,10 +38,17 @@
       "metadata": {
         "description": "Location for all resources."
       }
-    }
+    },
+    "alertRuleName": {
+      "type": "string",
+      "defaultValue": "myWorkspace",
+      "metadata": {
+        "description": "Name of the workspace where the data will be stored."
+      }
+    },
   },
   "variables": {
-    "responseAlertName": "[format('ResponseTime-{0}', toLower(parameters('applicationInsightsName')))]"
+    "responseAlertName": "[format('ResponseTime-{0}', toLower(parameters('alertRuleName')))]"
   },
   "resources": [
     {
