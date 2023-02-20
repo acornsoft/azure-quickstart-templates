@@ -36,13 +36,41 @@
       "metadata": {
         "description": "Name that will be used to build associated artifacts"
       }
-    }
+    },
+    "appInsightsName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+      }
+    },
+    "logAnalyticsName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+      }
+    },
+    "servicePlanName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+      }
+    },
+    "webAppName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+      }
+    },
   },
   "variables": {
-    "appServicePlanName": "[parameters('appName')]",
-    "webSiteName": "[parameters('appName')]",
-    "appInsightName": "[parameters('appName')]",
-    "logAnalyticsName": "[parameters('appName')]"
+    "appServicePlanName": "[parameters('servicePlanName')]",
+    "webSiteName": "[parameters('webAppName')]",
+    "appInsightName": "[parameters('appInsightsName')]",
+    "logAnalyticsName": "[parameters('logAnalyticsName')]"
   },
   "resources": [
     {
