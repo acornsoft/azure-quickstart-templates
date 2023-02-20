@@ -59,7 +59,7 @@
   },
   "variables": {
     "appInsightName": "[parameters('appInsightsName')]",
-    "logAnalyticsName": "[parameters('logAnalyticsName')],
+    "logAnalyticsName": "[parameters('logAnalyticsName')]",
     "servicePlanName": "[parameters('servicePlanName')]",
     "webAppName": "[parameters('WebAppName')]",
     "webSiteName": "[parameters('WebAppName')]"
