@@ -30,20 +30,39 @@
         "description": "Location for all resources."
       }
     },
-    "appName": {
+    
+    "appInsightsName": {
       "type": "string",
       "defaultValue": "[uniqueString(resourceGroup().id)]",
       "metadata": {
         "description": "Name that will be used to build associated artifacts"
-      }
+    },
+    "appServicePlanName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+    },
+    "logAnalyticsName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+    },
+    "webAppName": {
+      "type": "string",
+      "defaultValue": "[uniqueString(resourceGroup().id)]",
+      "metadata": {
+        "description": "Name that will be used to build associated artifacts"
+      },
     }
   },
   "variables": {
-    "appInsightName": "[toLower(format('appi-{0}', parameters('appName')))]",
-    "appServicePlanName": "[toLower(format('asp-{0}', parameters('appName')))]",
-    "logAnalyticsName": "[toLower(format('log-{0}', parameters('appName')))]",
-    "webAppName": "[toLower(format('app-{0}', parameters('appName')))]",
-    "webSiteName": "[toLower(format('app-{0}', parameters('appName')))]"
+    "appInsightName": "[parameters('appInsightsName')]",
+    "appServicePlanName": "[parameters('appServicePlanName')]",
+    "logAnalyticsName": "[parameters('logAnalyticsName')],
+    "webAppName": "[parameters('WebAppName')]",
+    "webSiteName": "[parameters('WebAppName')]"
   },
   "resources": [
     {
