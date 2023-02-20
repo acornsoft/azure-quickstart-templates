@@ -67,10 +67,10 @@
     },
   },
   "variables": {
-    "appServicePlanName": "[parameters('servicePlanName')]",
-    "webSiteName": "[parameters('webAppName')]",
-    "appInsightName": "[parameters('appInsightsName')]",
-    "logAnalyticsName": "[parameters('logAnalyticsName')]"
+    "appServicePlanName": "[parameters('appName')]",
+    "webSiteName": "[parameters('appName')]",
+    "appInsightName": "[parameters('appName')]",
+    "logAnalyticsName": "[parameters('appName')]"
   },
   "resources": [
     {
