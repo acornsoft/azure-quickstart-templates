@@ -59,8 +59,8 @@
   },
   "variables": {
     "appInsightName": "[parameters('appInsightsName')]",
-    "appServicePlanName": "[parameters('appServicePlanName')]",
     "logAnalyticsName": "[parameters('logAnalyticsName')],
+    "servicePlanName": "[parameters('servicePlanName')]",
     "webAppName": "[parameters('WebAppName')]",
     "webSiteName": "[parameters('WebAppName')]"
   },
@@ -68,7 +68,7 @@
     {
       "type": "Microsoft.Web/serverfarms",
       "apiVersion": "2020-06-01",
-      "name": "[variables('appServicePlanName')]",
+      "name": "[variables('servicePlanName')]",
       "location": "[parameters('location')]",
       "sku": {
         "name": "[parameters('skuName')]",
@@ -92,14 +92,14 @@
         "ProjectName": "[parameters('appName')]"
       },
       "properties": {
-        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
+        "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('servicePlanName'))]",
         "httpsOnly": true,
         "siteConfig": {
           "minTlsVersion": "1.2"
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
+        "[resourceId('Microsoft.Web/serverfarms', variables('servicePlanName'))]",
         "[resourceId('Microsoft.OperationalInsights/workspaces', variables('logAnalyticsName'))]"
       ]
     },
