@@ -4,8 +4,8 @@
   "metadata": {
     "_generator": {
       "name": "bicep",
-      "version": "0.13.1.58284",
-      "templateHash": "157789837262332035"
+      "version": "0.25.53.49325",
+      "templateHash": "9818745356982883667"
     }
   },
   "parameters": {
@@ -100,7 +100,7 @@
     },
     "storageAccountBehindVNet": {
       "type": "string",
-      "defaultValue": "true",
+      "defaultValue": "false",
       "allowedValues": [
         "true",
         "false"
@@ -560,7 +560,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "apiVersion": "2020-10-01",
+      "apiVersion": "2022-09-01",
       "name": "DeployPrivateEndpoints",
       "resourceGroup": "[parameters('vnetResourceGroupName')]",
       "properties": {
@@ -606,8 +606,8 @@
           "metadata": {
             "_generator": {
               "name": "bicep",
-              "version": "0.13.1.58284",
-              "templateHash": "10318245746676098671"
+              "version": "0.25.53.49325",
+              "templateHash": "12167039090904194957"
             }
           },
           "parameters": {
