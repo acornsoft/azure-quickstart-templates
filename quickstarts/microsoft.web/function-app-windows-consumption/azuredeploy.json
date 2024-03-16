@@ -30,7 +30,7 @@
     },
     "functionWorkerRuntime": {
       "type": "string",
-      "defaultValue": "node",
+      "defaultValue": "dotnet",
       "allowedValues": [
         "dotnet",
         "node",
@@ -50,8 +50,8 @@
   },
   "variables": {
     "hostingPlanName": "[parameters('functionAppName')]",
-    "applicationInsightsName": "[parameters('functionAppName')]",
-    "storageAccountName": "[format('{0}azfunctions', uniqueString(resourceGroup().id))]"
+    "applicationInsightsName": "[replace(parameters('functionAppName'), 'func-', 'appi-')]",
+    "storageAccountName": "[replace(parameters('functionAppName'), 'func-', 'st-')]"
   },
   "resources": [
     {
