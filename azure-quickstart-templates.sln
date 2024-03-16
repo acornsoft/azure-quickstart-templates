@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "quickstarts", "quickstarts", "{85BB6E1F-B28D-4793-A3EF-EFA46267158F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microsoft.customproviders", "microsoft.customproviders", "{E192D07E-42BA-4BE0-B500-BAFCA4C701AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "custom-rp-with-function", "custom-rp-with-function", "{A8DA371D-68E2-4B1E-A9F7-24F79BFD0ED8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "extensions", "quickstarts\microsoft.customproviders\custom-rp-with-function\src\extensions.csproj", "{91395ABA-ECA3-47A1-A7C9-7845ADF990E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91395ABA-ECA3-47A1-A7C9-7845ADF990E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91395ABA-ECA3-47A1-A7C9-7845ADF990E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91395ABA-ECA3-47A1-A7C9-7845ADF990E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91395ABA-ECA3-47A1-A7C9-7845ADF990E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E192D07E-42BA-4BE0-B500-BAFCA4C701AB} = {85BB6E1F-B28D-4793-A3EF-EFA46267158F}
+		{A8DA371D-68E2-4B1E-A9F7-24F79BFD0ED8} = {E192D07E-42BA-4BE0-B500-BAFCA4C701AB}
+		{91395ABA-ECA3-47A1-A7C9-7845ADF990E8} = {A8DA371D-68E2-4B1E-A9F7-24F79BFD0ED8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C95D2F7-2AD1-48B9-89E7-8292C64ACE03}
+	EndGlobalSection
+EndGlobal

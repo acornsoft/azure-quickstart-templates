@@ -39,10 +39,10 @@
     }
   },
   "variables": {
-    "appServicePlanName": "[toLower(replace(parameters('appName'),'app-','asp-'))]",
-    "webSiteName": "[toLower(parameters('appName'))]",
     "appInsightName": "[toLower(replace(parameters('appName'),'app-','appi-'))]",
-    "logAnalyticsName": "[toLower(replace(parameters('appName'),'app-','log-'))]"
+    "appServicePlanName": "[toLower(replace(parameters('appName'),'app-','asp-'))]",
+    "logAnalyticsName": "[toLower(replace(parameters('appName'),'app-','log-'))]",
+    "webSiteName": "[toLower(parameters('appName'))]"
   },
   "resources": [
     {
