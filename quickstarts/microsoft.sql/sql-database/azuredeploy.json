@@ -57,7 +57,7 @@
     {
       "type": "Microsoft.Sql/servers/databases",
       "apiVersion": "2022-05-01-preview",
-      "name": "[format('{0}', parameters('sqlDBName'))]",
+      "name": "[format('{0}/{1}', parameters('serverName'), parameters('sqlDBName'))]",
       "location": "[parameters('location')]",
       "sku": {
         "name": "Standard",
