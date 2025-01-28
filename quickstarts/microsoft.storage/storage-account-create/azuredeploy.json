@@ -51,7 +51,9 @@
         "name": "[parameters('storageAccountType')]"
       },
       "kind": "StorageV2",
-      "properties": {}
+      "properties": {
+          "minimumTlsVersion": "TLS1_2",
+      }
     }
   ],
   "outputs": {
