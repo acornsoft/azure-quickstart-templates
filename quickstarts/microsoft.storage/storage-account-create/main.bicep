@@ -24,7 +24,9 @@ resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
     name: storageAccountType
   }
   kind: 'StorageV2'
-  properties: {}
+  properties: {
+ minimumTlsVersion: 'TLS1_2'
+  }
 }
 
 output storageAccountName string = storageAccountName
