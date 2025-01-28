@@ -25,7 +25,7 @@ resource sa 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   }
   kind: 'StorageV2'
   properties: {
- minimumTlsVersion: 'TLS1_2'
+     minimumTlsVersion: 'TLS1_2'
   }
 }
 
